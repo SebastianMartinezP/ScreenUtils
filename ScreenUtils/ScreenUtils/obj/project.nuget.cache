@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "4UP2Nh0PnXQoSt76pIpc3sgqW2YmXEVRx3Yoknq/zj/Wiaz3d8nO+85E8WdfvnJIi3tmjBiM9igT/bY+QHfQdA==",
+  "success": true,
+  "projectFilePath": "E:\\Projects\\c#\\ScreenUtils\\ScreenUtils\\ScreenUtils\\ScreenUtils.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Seba\\.nuget\\packages\\handycontrols\\3.4.4\\handycontrols.3.4.4.nupkg.sha512",
+    "C:\\Users\\Seba\\.nuget\\packages\\mahapps.metro.iconpacks.bootstrapicons\\4.11.0\\mahapps.metro.iconpacks.bootstrapicons.4.11.0.nupkg.sha512"
+  ],
+  "logs": []
+}

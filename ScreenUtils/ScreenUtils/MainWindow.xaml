@@ -1,0 +1,109 @@
+﻿<Window x:Class="ScreenUtils.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        
+        xmlns:local="clr-namespace:ScreenUtils"
+        xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
+        xmlns:hc="https://handyorg.github.io/handycontrol"
+        
+        mc:Ignorable="d"
+        Title="MainWindow" 
+        Height="45" Width="445" 
+        AllowsTransparency="True"
+        WindowStyle="None" 
+        ResizeMode="NoResize" 
+        Topmost="True"
+        Background="Transparent"
+        MouseDown="Window_MouseDown"
+        >
+
+    <hc:TransitioningContentControl TransitionMode="Left2RightWithFade">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                
+                <ColumnDefinition Width="0.3*"/>
+                <ColumnDefinition Width="0.01*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="0.01*"/>
+                <ColumnDefinition Width="0.1*"/>
+                
+            </Grid.ColumnDefinitions>
+
+            <Rectangle Grid.ColumnSpan="5" RadiusX="4" RadiusY="4" Margin="2">
+                <Rectangle.Fill>
+                    <SolidColorBrush Color="#1A374D"/>
+                </Rectangle.Fill>
+            </Rectangle>
+
+            
+        
+            <!-- HDR -->
+            <StackPanel Orientation="Horizontal" Grid.Column="0" Margin="5">
+                <Label 
+                    Margin="5,0,0,0" Height="20"
+                    Background="Transparent" BorderBrush="Transparent" Foreground="#B1D0E0" 
+                    FontFamily="Fira Code" Content="HDR" Width="30" Padding="0" FontSize="14"/>
+
+                <ToggleButton 
+                    x:Name="ToggleHDR" Margin="5,0,5,0" 
+                    Style="{StaticResource ToggleButtonSwitch}"
+                    Checked="ToggleHDR_Checked"
+                    Unchecked="ToggleHDR_Unchecked"/>
+
+            </StackPanel>
+
+            <!-- Separator -->
+            <StackPanel Orientation="Horizontal" Grid.Column="1" Margin="0,5,0,5">
+                <Separator Height="1" Margin="0,5,0,5" Foreground="#B1D0E0">
+                    <Separator.LayoutTransform>
+                        <RotateTransform Angle="90" />
+                    </Separator.LayoutTransform>
+                </Separator>
+
+            </StackPanel>
+            
+            
+
+            <!-- Night Light -->
+            <StackPanel Orientation="Horizontal" Grid.Column="2" Margin="5" >
+                <iconPacks:PackIconBootstrapIcons 
+                    Width="20" Height="35"  Margin="0,0,10,0"
+                    Kind="MoonStarsFill" Foreground="#B1D0E0"/>
+
+
+                <hc:PreviewSlider 
+                    Name="Slider" Width="225" Value="0" Maximum="100" VerticalAlignment="Center"
+                    ValueChanged="Slider_ValueChanged" 
+                    IsSnapToTickEnabled="True" TickFrequency="1"
+                    Foreground="#B1D0E0"
+                    Background="#B1D0E0"
+                    BorderBrush="#B1D0E0"/>
+
+
+                <Label 
+                    Name="SliderLabel" Margin="0,0,0,0" Height="20"
+                    Background="Transparent" BorderBrush="Transparent" Foreground="#B1D0E0" 
+                    FontFamily="Fira Code" Width="40" Padding="0" FontSize="14" Content="100"/>
+
+            </StackPanel>
+
+            <!-- Separator -->
+            <StackPanel Orientation="Horizontal" Grid.Column="3" Margin="0,5,0,5">
+                <Separator Height="1" Margin="0,5,0,5" Foreground="#B1D0E0">
+                    <Separator.LayoutTransform>
+                        <RotateTransform Angle="90" />
+                    </Separator.LayoutTransform>
+                </Separator>
+
+            </StackPanel>
+            
+            <!-- Pin -->
+            <StackPanel Orientation="Horizontal" Grid.Column="4">
+            </StackPanel>
+            
+        </Grid>
+
+    </hc:TransitioningContentControl>
+</Window>

@@ -1,0 +1,61 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "ScreenUtils/1.0.0": {
+        "dependencies": {
+          "HandyControls": "3.4.4",
+          "MahApps.Metro.IconPacks.BootstrapIcons": "4.11.0"
+        },
+        "runtime": {
+          "ScreenUtils.dll": {}
+        }
+      },
+      "HandyControls/3.4.4": {
+        "runtime": {
+          "lib/net6.0/HandyControl.dll": {
+            "assemblyVersion": "3.4.0.0",
+            "fileVersion": "3.4.0.0"
+          }
+        }
+      },
+      "MahApps.Metro.IconPacks.BootstrapIcons/4.11.0": {
+        "runtime": {
+          "lib/net5.0-windows7.0/MahApps.Metro.IconPacks.BootstrapIcons.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.11.0.12"
+          },
+          "lib/net5.0-windows7.0/MahApps.Metro.IconPacks.Core.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.11.0.12"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ScreenUtils/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "HandyControls/3.4.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-EfofnhqPTZi+yb7pYUB5ma6p0if6RhAbjKrTx33fyyqB2T7X2qslDbyf3JRqj4q5n3T4bo6aXsuGvWK6s2LA+A==",
+      "path": "handycontrols/3.4.4",
+      "hashPath": "handycontrols.3.4.4.nupkg.sha512"
+    },
+    "MahApps.Metro.IconPacks.BootstrapIcons/4.11.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-PiKLp5u58E852bkx1EhqWbCt1Xsyeqyyr+GKXFzJ9OfaKc6pWT2HvskQdlJdRVyGQae8A+3jnzxwUYoh3IlYuQ==",
+      "path": "mahapps.metro.iconpacks.bootstrapicons/4.11.0",
+      "hashPath": "mahapps.metro.iconpacks.bootstrapicons.4.11.0.nupkg.sha512"
+    }
+  }
+}
